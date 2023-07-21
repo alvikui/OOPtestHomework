@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
-    Radio radio = new Radio();
+    Radio radio = new Radio(30);
 
     // Номер станции
     @Test
@@ -39,7 +39,7 @@ public class RadioTest {
 
     @Test
     public void shouldOverMaxStation() {
-        radio.setCurrentStation(15);
+        radio.setCurrentStation(150);
 
         int expected = 0;
         int actual = radio.getCurrentStation();

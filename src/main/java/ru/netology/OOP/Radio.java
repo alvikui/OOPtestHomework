@@ -8,6 +8,9 @@ public class Radio {
     private int maxVolume = 100;
     private int minVolume = 0;
 
+    public Radio(int numberStation) {
+        this.maxStation = numberStation - 1;
+    }
 
     public int getCurrentStation() {
         return currentStation;
